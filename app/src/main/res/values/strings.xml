@@ -5,7 +5,9 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="action_settings">Settings</string>
     <string name="Usuario">Usuario</string>
-
+    <string name="btnGuardarCambios">Guardar Cambios</string>
+    <string name="pasAnterior">Contraseña Anterior</string>
+    <string name="pasNueva">Contraseña Nueva</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

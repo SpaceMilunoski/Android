@@ -11,21 +11,22 @@
     <RelativeLayout
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="150dp">
         <ImageView
             android:id="@+id/imgUsuario"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            app:srcCompat="@drawable/usuario"/>
+            app:srcCompat="@drawable/user"/>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
             android:layout_alignRight="@+id/imgUsuario"
-            android:layout_marginRight="120dp"
+            android:layout_marginRight="80dp"
             android:layout_alignBottom="@id/imgUsuario"
-            app:srcCompat="@drawable/ic_edit_white_24dp" />
+            app:srcCompat="@android:drawable/ic_menu_edit" />
     </RelativeLayout>
     <RelativeLayout
         android:layout_width="match_parent"
@@ -43,13 +44,18 @@
             android:layout_marginTop="10dp"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:hint="Contraseña anterior"/>
+            android:hint="@string/pasAnterior"/>
         <EditText
             android:id="@+id/etPassnueva"
             android:layout_below="@+id/etPassanterior"
             android:layout_marginTop="10dp"
             android:layout_width="170dp"
             android:layout_height="wrap_content"
-            android:hint="Nueva cotraseña"/>
+            android:hint="@string/pasNueva"/>
+        <Button
+            android:layout_below="@id/etPassnueva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnGuardarCambios"/>
     </RelativeLayout>
 </LinearLayout>
