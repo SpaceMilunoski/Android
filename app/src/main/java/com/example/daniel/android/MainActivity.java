@@ -85,9 +85,9 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.Ajustes) {
             fragmentManager.beginTransaction().replace(R.id.Contenido, new Ajustes()).commit();
         } else if (id == R.id.Menu) {
-
+            fragmentManager.beginTransaction().replace(R.id.Contenido, new MenuPrincipal()).commit();
         } else if (id == R.id.Ayuda) {
-
+            fragmentManager.beginTransaction().replace(R.id.Contenido, new Ayuda()).commit();
         } else if (id == R.id.Salir) {
             System.exit(0);
         }
