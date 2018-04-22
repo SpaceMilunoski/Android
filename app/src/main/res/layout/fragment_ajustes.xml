@@ -12,11 +12,12 @@
         android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="150dp">
-        <ImageView
+
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/imgUsuario"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            app:srcCompat="@drawable/user"/>
+            android:layout_height="140dp"
+            android:src="@drawable/user"/>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
@@ -34,22 +35,22 @@
         android:gravity="center_horizontal">
         <EditText
             android:id="@+id/etUsuario"
-            android:layout_marginTop="30dp"
-            android:layout_width="170dp"
+            android:layout_marginTop="@dimen/margentopet"
+            android:layout_width="@dimen/etsize"
             android:layout_height="wrap_content"
             android:hint="@string/Usuario"/>
         <EditText
             android:id="@+id/etPassanterior"
             android:layout_below="@+id/etUsuario"
             android:layout_marginTop="10dp"
-            android:layout_width="170dp"
+            android:layout_width="@dimen/etsize"
             android:layout_height="wrap_content"
             android:hint="@string/pasAnterior"/>
         <EditText
             android:id="@+id/etPassnueva"
             android:layout_below="@+id/etPassanterior"
             android:layout_marginTop="10dp"
-            android:layout_width="170dp"
+            android:layout_width="@dimen/etsize"
             android:layout_height="wrap_content"
             android:hint="@string/pasNueva"/>
         <Button
