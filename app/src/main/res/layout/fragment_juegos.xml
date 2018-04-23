@@ -12,23 +12,27 @@
         android:gravity="center">
 
         <Button
+            android:id="@+id/btnCuestionario"
             android:layout_width="@dimen/btnAncho"
             android:layout_height="wrap_content"
             android:text="@string/tbCuetionario" />
 
         <Button
+            android:id="@+id/btnEncuentraError"
             android:layout_width="@dimen/btnAncho"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
             android:text="@string/tbEncuentraError" />
 
         <Button
+            android:id="@+id/btnSintaxis"
             android:layout_width="@dimen/btnAncho"
             android:layout_height="wrap_content"
             android:layout_marginTop="100dp"
             android:text="@string/tbCompletaSintaxis" />
 
         <Button
+            android:id="@+id/btnPuntuaciones"
             android:layout_width="@dimen/btnAncho"
             android:layout_height="wrap_content"
             android:layout_marginTop="150dp"
