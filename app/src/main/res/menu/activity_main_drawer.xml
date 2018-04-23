@@ -13,6 +13,11 @@
             android:icon="@drawable/ic_menu_black_24dp"
             android:title="Menu principal" />
         <item
+            android:id="@+id/Juegos"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Juegos" />
+            />
+        <item
             android:id="@+id/Ayuda"
             android:icon="@drawable/ic_help_black_24dp"
             android:title="Ayuda" />
