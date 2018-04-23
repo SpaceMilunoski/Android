@@ -23,16 +23,15 @@ public class MenuPrincipal extends Fragment {
         // Inflate the layout for this fragment
 
         final View view = inflater.inflate(R.layout.fragment_menuprincipal, container, false);
-        final FragmentManager fragmentManager = getFragmentManager();
+        //final FragmentManager fragmentManager = getFragmentManager();
         final Button btnJuego = (Button) view.findViewById(R.id.btnJuegos);
         //final FragmentTransaction transaction = getFragmentManager().beginTransaction();
         btnJuego.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fragmentManager.beginTransaction().replace(R.id.Contenido, new MenuPrincipal()).commit();
+                //fragmentManager.beginTransaction().replace(R.id.Contenido, new MenuPrincipal()).commit();
                 FragmentTransaction trans = getFragmentManager().beginTransaction();
-                trans.replace(R.id.Contenido, new Ajustes()).commit();
-
+                trans.replace(R.id.Contenido, new Juegos()).commit();
             }
         });
         return view;
