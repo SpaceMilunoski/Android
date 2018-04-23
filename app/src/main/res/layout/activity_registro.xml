@@ -1,9 +1,69 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.daniel.android.Registro">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.daniel.android.Ajustes"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:src="@drawable/user"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/imgUsuario"
+            android:layout_marginRight="80sp"
+            android:layout_alignBottom="@id/imgUsuario"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <EditText
+            android:id="@+id/etUsuario"
+            android:layout_marginTop="@dimen/margentopet"
+            android:layout_width="@dimen/etsize"
+            android:layout_height="wrap_content"
+            android:hint="@string/Usuario"/>
+        <EditText
+            android:id="@+id/etPas"
+            android:layout_below="@+id/etUsuario"
+            android:layout_marginTop="@dimen/margintopetet"
+            android:layout_width="@dimen/etsize"
+            android:layout_height="wrap_content"
+            android:hint="@string/pas"/>
+        <TextView
+            android:id="@+id/tvPas"
+            android:layout_marginTop="@dimen/margintopetet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPas"
+            android:text="@string/tvPass"/>
+        <EditText
+            android:id="@+id/etPasotra"
+            android:layout_below="@+id/tvPas"
+            android:layout_marginTop="@dimen/margintopetet"
+            android:layout_width="@dimen/etsize"
+            android:layout_height="wrap_content"
+            android:hint="@string/pas"/>
+        <Button
+            android:layout_below="@id/etPasotra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/registro"/>
+    </RelativeLayout>
+</LinearLayout>

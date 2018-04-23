@@ -6,7 +6,12 @@
     <dimen name="nav_header_height">120dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="etsize">170dp</dimen>
+<<<<<<< HEAD
     <dimen name="margentopet">30dp</dimen>
 
     <dimen name="btnAncho">186dp</dimen>
+=======
+    <dimen name="margentopet">25dp</dimen>
+    <dimen name="margintopetet">10dp</dimen>
+>>>>>>> c3baf3ae8511427c5882812fb83f8cb63449a600
 </resources>
