@@ -1,34 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.daniel.android.Juegos">
+    android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center_horizontal">
-        <Button
-            android:id="@+id/btnCuestionario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margentopet"/>
-        <Button
-            android:id="@+id/btnEncuentraerror"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnCuestionario"/>
-        <Button
-            android:id="@+id/btnCompletasintaxis"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnEncuentraerror"/>
-        <Button
-            android:id="@+id/btnPuntuaciones"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnCompletasintaxis"/>
-    </RelativeLayout>
+        android:gravity="center">
 
+        <Button
+            android:layout_width="@dimen/btnAncho"
+            android:layout_height="wrap_content"
+            android:text="@string/tbCuetionario" />
+
+        <Button
+            android:layout_width="@dimen/btnAncho"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/tbEncuentraError" />
+
+        <Button
+            android:layout_width="@dimen/btnAncho"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="@string/tbCompletaSintaxis" />
+
+        <Button
+            android:layout_width="@dimen/btnAncho"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="@string/tbPuntuaciones" />
+
+    </RelativeLayout>
 </FrameLayout>
+

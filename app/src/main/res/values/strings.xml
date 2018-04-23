@@ -15,5 +15,12 @@
     <string name="pas">Contraseña</string>
     <string name="registro">Registrarse</string>
     <string name="tvReg">o</string>
+
+    <string name="tbCuetionario">Cuestionario</string>
+    <string name="tbEncuentraError">Encuentra el error</string>
+    <string name="tbCompletaSintaxis">Completa la sintaxis</string>
+    <string name="tbPuntuaciones">Puntuaciones</string>
+
     <string name="tvPass">Ingrese su contraseña otra vez</string>
+
 </resources>

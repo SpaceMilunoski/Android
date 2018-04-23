@@ -61,9 +61,10 @@
             android:layout_height="wrap_content"
             android:hint="@string/pas"/>
         <Button
+            android:id="@+id/btnRegistrarser"
             android:layout_below="@id/etPasotra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/registro"/>
+            android:text="@string/registro" />
     </RelativeLayout>
 </LinearLayout>

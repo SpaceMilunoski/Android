@@ -1,5 +1,7 @@
 package com.example.daniel.android;
 
+import android.content.ContentValues;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -45,6 +47,7 @@ public class MainActivity extends AppCompatActivity
         final FragmentManager fragmentManager = getSupportFragmentManager();
         fragmentManager.beginTransaction().replace(R.id.Contenido, new MenuPrincipal()).commit();
         final  Button btnInicio = (Button) findViewById(R.id.btnJuegos);
+
 
     }
 
@@ -101,4 +104,5 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 }

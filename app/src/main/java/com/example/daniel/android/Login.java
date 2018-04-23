@@ -20,6 +20,9 @@ public class Login extends AppCompatActivity {
         ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+                
                 if (etUsuariol.getText().toString().equals("u")&& etPas.getText().toString().equals("")){
                     Intent i = new Intent(Login.this , MainActivity.class);
                     startActivity(i);
