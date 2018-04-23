@@ -42,21 +42,36 @@
         <EditText
             android:id="@+id/etPassanterior"
             android:layout_below="@+id/etUsuario"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/margintopetet"
             android:layout_width="@dimen/etsize"
             android:layout_height="wrap_content"
             android:hint="@string/pasAnterior"/>
         <EditText
             android:id="@+id/etPassnueva"
             android:layout_below="@+id/etPassanterior"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="@dimen/margintopetet"
+            android:layout_width="@dimen/etsize"
+            android:layout_height="wrap_content"
+            android:hint="@string/pasNueva"/>
+        <TextView
+            android:id="@+id/tvPas"
+            android:layout_marginTop="@dimen/margintopetet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPassnueva"
+            android:text="@string/tvPass"/>
+        <EditText
+            android:id="@+id/etPassnueva2"
+            android:layout_below="@+id/tvPas"
+            android:layout_marginTop="@dimen/margintopetet"
             android:layout_width="@dimen/etsize"
             android:layout_height="wrap_content"
             android:hint="@string/pasNueva"/>
         <Button
-            android:layout_below="@id/etPassnueva"
+            android:layout_below="@id/etPassnueva2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margintopetet"
             android:text="@string/btnGuardarCambios"/>
     </RelativeLayout>
 </LinearLayout>
