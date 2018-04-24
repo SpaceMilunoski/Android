@@ -3,6 +3,7 @@ package com.example.daniel.android;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,8 +25,7 @@ public class Login extends AppCompatActivity {
         ingresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
+            if(!etUsuariol.getText().toString().equals("") && !etPas.getText().toString().equals("") ){
 
                 SQLiteDatabase bd = admin.getWritableDatabase();
 
@@ -39,15 +39,21 @@ public class Login extends AppCompatActivity {
                 if (fila.moveToFirst()) {
 
                     Intent i = new Intent(Login.this , MainActivity.class);
+
+                    i.putExtra("name",fila.getString(1).toString());
                     startActivity(i);
 
                 } else
-
-                    Toast.makeText(Login.this, "No existe ningún usuario con ese dni",
+                    Toast.makeText(Login.this, "Tal vez ese usuario no existe o tu contraseña esta mal verifica por favor",
 
                             Toast.LENGTH_SHORT).show();
 
                 bd.close();
+            }else {
+                Toast.makeText(Login.this, "Estos datos no pueden estar en blanco",
+
+                        Toast.LENGTH_SHORT).show();
+            }
 
             }
         });
@@ -56,6 +62,7 @@ public class Login extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(Login.this,Registro.class);
                 startActivity(i);
+                finish();
             }
         });
     }
