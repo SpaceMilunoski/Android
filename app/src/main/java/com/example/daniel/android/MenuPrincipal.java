@@ -25,15 +25,25 @@ public class MenuPrincipal extends Fragment {
         final View view = inflater.inflate(R.layout.fragment_menuprincipal, container, false);
         //final FragmentManager fragmentManager = getFragmentManager();
         final Button btnJuego = (Button) view.findViewById(R.id.btnJuegos);
+        final Button btnTemas = (Button) view.findViewById(R.id.btnTemasEstudio);
         //final FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        btnTemas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //fragmentManager.beginTransaction().replace(R.id.Contenido, new MenuPrincipal()).commit();
+                FragmentTransaction trans = getFragmentManager().beginTransaction();
+                trans.replace(R.id.Contenido, new temasdeestudio()).commit();
+            }
+        });
         btnJuego.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //fragmentManager.beginTransaction().replace(R.id.Contenido, new MenuPrincipal()).commit();
                 FragmentTransaction trans = getFragmentManager().beginTransaction();
-                trans.replace(R.id.Contenido, new Juegos()).commit();
+                trans.replace(R.id.Contenido, new juegos()).commit();
             }
         });
+
         return view;
     }
 }

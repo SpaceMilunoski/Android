@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<TextView
+        android:id="@+id/tvTemas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Temas de Estudio"
+        android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp"
+        android:textSize="35dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/btnIntroduccion"
+            android:layout_width="@dimen/btnAncho"
+            android:layout_height="wrap_content"
+            android:text="Introducciòn a la POO"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorAccent"/>
+
+        <Button
+            android:id="@+id/btnClases"
+            android:layout_width="@dimen/btnAncho"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="Clases"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorAccent"/>/>
+
+
+        <Button
+            android:id="@+id/btnObjeto"
+            android:layout_width="@dimen/btnAncho"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:text="Objeto"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorAccent"/>/>
+
+        <Button
+            android:id="@+id/btnRelaciones"
+            android:layout_width="@dimen/btnAncho"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:text="Relaciones entre Clases"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorAccent"/>/>
+
+    </RelativeLayout>
+</FrameLayout>

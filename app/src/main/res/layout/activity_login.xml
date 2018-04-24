@@ -33,6 +33,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/etUsuariol"
                     android:layout_marginTop="@dimen/margintopetet"
+                    android:inputType="textPassword"
                     android:width="@dimen/etsize"
                     android:hint="@string/pas"/>
             </LinearLayout>
