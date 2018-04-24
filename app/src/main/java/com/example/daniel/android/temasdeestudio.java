@@ -20,6 +20,8 @@ public class temasdeestudio extends Fragment {
         //final FragmentManager fragmentManager = getFragmentManager();
         final Button btnTema1 = (Button) view.findViewById(R.id.btnIntroduccion);
         final Button btnTema2 = (Button) view.findViewById(R.id.btnClases);
+        final Button btnTema3 = (Button) view.findViewById(R.id.btnObjeto);
+        final Button btnTema4 = (Button) view.findViewById(R.id.btnRelaciones);
         //final FragmentTransaction transaction = getFragmentManager().beginTransaction();
         btnTema1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +37,22 @@ public class temasdeestudio extends Fragment {
                 //fragmentManager.beginTransaction().replace(R.id.Contenido, new MenuPrincipal()).commit();
                 FragmentTransaction trans = getFragmentManager().beginTransaction();
                 trans.replace(R.id.Contenido, new Clases()).commit();
+            }
+        });
+        btnTema3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //fragmentManager.beginTransaction().replace(R.id.Contenido, new MenuPrincipal()).commit();
+                FragmentTransaction trans = getFragmentManager().beginTransaction();
+                trans.replace(R.id.Contenido, new Objeto()).commit();
+            }
+        });
+        btnTema4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //fragmentManager.beginTransaction().replace(R.id.Contenido, new MenuPrincipal()).commit();
+                FragmentTransaction trans = getFragmentManager().beginTransaction();
+                trans.replace(R.id.Contenido, new RelacionesClases()).commit();
             }
         });
 

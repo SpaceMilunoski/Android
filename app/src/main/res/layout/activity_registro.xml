@@ -46,6 +46,7 @@
             android:layout_width="@dimen/etsize"
             android:layout_height="wrap_content"
             android:hint="@string/pas"/>
+        android:inputType="textPassword"
         <TextView
             android:id="@+id/tvPas"
             android:layout_marginTop="@dimen/margintopetet"
@@ -53,6 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/etPas"
             android:text="@string/tvPass"/>
+        android:inputType="textPassword"
         <EditText
             android:id="@+id/etPasotra"
             android:layout_below="@+id/tvPas"

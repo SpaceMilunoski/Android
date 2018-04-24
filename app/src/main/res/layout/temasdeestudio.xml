@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:text=" Temas de Estudio"
         android:layout_marginLeft="30dp"
+    android:layout_marginTop="30dp"
         android:textSize="35dp"
         />
     <RelativeLayout
@@ -23,28 +24,37 @@
             android:id="@+id/btnIntroduccion"
             android:layout_width="@dimen/btnAncho"
             android:layout_height="wrap_content"
-            android:text="Introducciòn a la POO" />
+            android:text="Introducciòn a la POO"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorAccent"/>
 
         <Button
             android:id="@+id/btnClases"
             android:layout_width="@dimen/btnAncho"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="Clases" />
+            android:layout_marginTop="70dp"
+            android:text="Clases"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorAccent"/>/>
+
 
         <Button
-            android:id="@+id/btnSintaxis"
+            android:id="@+id/btnObjeto"
             android:layout_width="@dimen/btnAncho"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:text="Tema3" />
+            android:layout_marginTop="140dp"
+            android:text="Objeto"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorAccent"/>/>
 
         <Button
-            android:id="@+id/btnPuntuaciones"
+            android:id="@+id/btnRelaciones"
             android:layout_width="@dimen/btnAncho"
             android:layout_height="wrap_content"
-            android:layout_marginTop="150dp"
-            android:text="Tema4" />
+            android:layout_marginTop="210dp"
+            android:text="Relaciones entre Clases"
+            android:textColor="#FFFFFF"
+            android:background="@color/colorAccent"/>/>
 
     </RelativeLayout>
 </FrameLayout>

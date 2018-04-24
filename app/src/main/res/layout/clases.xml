@@ -1,34 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+android:layout_height="match_parent">
+<ScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    >
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-
-    <TextView
-        android:layout_marginTop="30dp"
-        android:id="@+id/tvTemas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="                Clases"
-        android:layout_marginLeft="30dp"
-        android:textSize="30dp"
-        />
-    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical" />
         <TextView
-            android:id="@+id/tvClases"
+            android:id="@+id/tvIntroducion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="         Clases"
+            android:layout_marginTop="30dp"
             android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:text="Las clases son plantillas que agrupan comportamiento (métodos) y estados (atributos) de los futuros objetos.
-Los objetos son instancias de una clase.Una clase se puede definir de las propiedades y comportamiento de un tipo de objeto concreto. La instanciación es la lectura de estas definiciones y la creación de un objeto a partir de ella."
+            android:textSize="30dp"
+
             />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="90dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/clase"
 
-    </RelativeLayout>
-</FrameLayout>
+
+                />
+            <TextView
+                android:id="@+id/tvIntroduccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Las clases son plantillas que agrupan comportamiento (métodos) y estados (atributos) de los futuros objetos.
+            Los objetos son instancias de una clase.Una clase se puede definir de las propiedades y comportamiento de un tipo de objeto concreto. La instanciación es la lectura de estas definiciones y la creación de un objeto a partir de ella."
+                android:textSize="15dp"
+                />
+            <TextView
+                android:id="@+id/tvIntroduccion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="Descripción abstracta de un grupo de objetos con
+propiedades similares (atributos), comportamiento común
+(operaciones), relaciones comunes con otros objetos y
+semántica común."
+                android:textSize="15dp"
+                />
+
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+</ScrollView>
+</android.support.constraint.ConstraintLayout>

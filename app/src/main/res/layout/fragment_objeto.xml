@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical" />
+            <TextView
+                android:id="@+id/tvIntroducion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="         Objetos"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:textSize="30dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="90dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:src="@drawable/objeto"
+
+
+                    />
+                <TextView
+                    android:id="@+id/tvIntroduccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Objeto: Concepto, abstracción o cosa con límites bien
+definidos y con significado para el problema que se está
+manejando."
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/tvIntroduccion2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="30dp"
+                    android:text="– Todos los objetos presentan una identidad, que los hace
+distinguibles, un estado y un comportamiento."
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/tvIntroduccion3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="– El término identidad significa que los objetos se distinguen por su
+existencia inherente y no por propiedades descriptivas que puedan
+tener.
+"
+                    android:textSize="15dp"
+                    />
+
+
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
