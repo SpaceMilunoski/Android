@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<TextView
+        android:id="@+id/tvTemas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Temas de Estudio"
+        android:layout_marginLeft="30dp"
+        android:textSize="35dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+
+        <Button
+            android:id="@+id/btnIntroduccion"
+            android:layout_width="@dimen/btnAncho"
+            android:layout_height="wrap_content"
+            android:text="Introducciòn a la POO" />
+
+        <Button
+            android:id="@+id/btnClases"
+            android:layout_width="@dimen/btnAncho"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Clases" />
+
+        <Button
+            android:id="@+id/btnSintaxis"
+            android:layout_width="@dimen/btnAncho"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text="Tema3" />
+
+        <Button
+            android:id="@+id/btnPuntuaciones"
+            android:layout_width="@dimen/btnAncho"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="Tema4" />
+
+    </RelativeLayout>
+</FrameLayout>
