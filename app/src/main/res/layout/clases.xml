@@ -22,9 +22,9 @@ android:layout_height="match_parent">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="         Clases"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="30dp"
-            android:textSize="30dp"
+            android:layout_marginTop="@dimen/separacion"
+            android:layout_marginLeft="@dimen/separacion"
+            android:textSize="@dimen/separacion"
 
             />
 
@@ -45,25 +45,21 @@ android:layout_height="match_parent">
                 android:id="@+id/tvIntroduccion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="30dp"
-                android:text="Las clases son plantillas que agrupan comportamiento (métodos) y estados (atributos) de los futuros objetos.
-            Los objetos son instancias de una clase.Una clase se puede definir de las propiedades y comportamiento de un tipo de objeto concreto. La instanciación es la lectura de estas definiciones y la creación de un objeto a partir de ella."
+                android:layout_marginLeft="@dimen/separacion"
+                android:layout_marginRight="@dimen/separacion"
+                android:layout_marginTop="@dimen/separacion"
+                android:text="@string/clases1"
                 android:textSize="15dp"
                 />
             <TextView
-                android:id="@+id/tvIntroduccion2"
+                android:id="@+id/tvclases2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="30dp"
-                android:text="Descripción abstracta de un grupo de objetos con
-propiedades similares (atributos), comportamiento común
-(operaciones), relaciones comunes con otros objetos y
-semántica común."
+                android:layout_marginLeft="@dimen/separacion"
+                android:layout_marginRight="@dimen/separacion"
+                android:layout_marginTop="@dimen/separacion"
+                android:layout_marginBottom="@dimen/separacion"
+                android:text="@string/clases2"
                 android:textSize="15dp"
                 />
 

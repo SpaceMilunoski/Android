@@ -22,9 +22,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=" Relaciones entre clases"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="30dp"
-                android:textSize="30dp"
+                android:layout_marginTop="@dimen/separacion"
+                android:layout_marginLeft="@dimen/separacion"
+                android:textSize="@dimen/separacion"
 
                 />
 
@@ -45,28 +45,53 @@
                     android:id="@+id/tvIntroduccion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginRight="30dp"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="@dimen/separacion"
+                    android:layout_marginRight="@dimen/separacion"
+                    android:layout_marginTop="@dimen/separacion"
                     android:text="Representan tipos de compartición entre clases, o relaciones semánticas.
-
-Asociación. Indica relaciones de mandato bidireccionales (Punteros ocultos en C++). Conlleva dependencia semántica y no establece una dirección de dependencia. Tienen cardinalidad.
-
-Herencia. Por esta relación una clase (subclase) comparte la estructura y/o comportamiento definidos en una (herencia simple) o más (herencia múltiple) clases, llamadas superclases.
-Representa una relación del tipo entre clases.
-Una subclase aumenta o restringe el comportamiento o estructura de la superclase (o ambas cosas).
-Una clase de la que no existen ejemplos se denomina {\it abstracta}.
-C++ declara como virtuales todas aquellas funciones que quiere modificar en sus subclases.
-
 Agregación. Representa una relación del tipo entre clases. Cuando la clase contenida no existe independientemente de la clase que la contiene se denomina agregación por valor y además implica contenido físico, mientras que si existe independientemente y se accede a ella indirectamente, es agregación por referencia.
-
-Uso. Es un refinamiento de la asociación donde se especifica cual es el cliente y cual el servidor de ciertos servicios, permitiendo a los clientes acceder sólo a las interfaces públicas de los servidores, ofreciendo mayor encapsulación de la información.
 
 Ejemplificación Se usa en lenguajes que soportan genericidad (declaración de clases parametrizadas y argumentos tipo template). Representa las relaciones entre las clases parametrizadas, que admiten parámetros formales, y las clases obtenidas cuando se concretan estos parámetros formales, ejemplificados o inicializados con un ejemplo.
 
 Metaclases Son clases cuyos ejemplos son a su vez clases. No se admiten en C++."
                     android:textSize="15dp"
                     />
+                <TextView
+                    android:id="@+id/tvreaaciones"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/separacion"
+                    android:layout_marginRight="@dimen/separacion"
+                    android:layout_marginTop="@dimen/separacion"
+                    android:text="Asociación. Indica relaciones de mandato bidireccionales (Punteros ocultos en C++). Conlleva dependencia semántica y no establece una dirección de dependencia. Tienen cardinalidad."
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/tvreaaciones1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/separacion"
+                    android:layout_marginRight="@dimen/separacion"
+                    android:layout_marginTop="@dimen/separacion"
+                    android:text="Herencia. Por esta relación una clase (subclase) comparte la estructura y/o comportamiento definidos en una (herencia simple) o más (herencia múltiple) clases, llamadas superclases.
+Representa una relación del tipo entre clases.
+Una subclase aumenta o restringe el comportamiento o estructura de la superclase (o ambas cosas).
+Una clase de la que no existen ejemplos se denomina {\it abstracta}.
+C++ declara como virtuales todas aquellas funciones que quiere modificar en sus subclases.
+"
+                    android:textSize="15dp"
+                    />
+                <TextView
+                    android:id="@+id/tvreaaciones2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/separacion"
+                    android:layout_marginRight="@dimen/separacion"
+                    android:layout_marginTop="@dimen/separacion"
+                    android:text="Uso. Es un refinamiento de la asociación donde se especifica cual es el cliente y cual el servidor de ciertos servicios, permitiendo a los clientes acceder sólo a las interfaces públicas de los servidores, ofreciendo mayor encapsulación de la información."
+                    android:textSize="15dp"
+                    />
+
 
 
 

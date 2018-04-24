@@ -8,7 +8,7 @@
     <dimen name="etsize">170dp</dimen>
 
 
-
+    <dimen name="separacion">30dp</dimen>
     <dimen name="btnAncho">186dp</dimen>
 
     <dimen name="margentopet">25dp</dimen>
